@@ -1,0 +1,84 @@
+<div style="text-align: center;">
+  <h1>Helian's Kitchen</h1>
+</div>
+
+<div class="colors">
+  Farbauswahl
+  <ul>
+    <li *ngFor="let scheme of colors" (click)="setColorScheme(scheme)">
+      <a class="colorLink">{{scheme.name}}</a>
+    </li>
+  </ul>
+</div>
+
+<div class="body">
+  <div class="scene">
+    <div class="box">
+
+      <div class="face wall back">
+
+      </div>
+      <div class="face floor">
+
+      </div>
+
+      <div class="face wall left">
+
+      </div>
+
+      <div class="face wall right">
+
+      </div>
+
+<!--      <app-box class="piece" style="left: 400px; height: 130px; width: 60px;"></app-box>-->
+<!--      <app-box class="piece" style="left: 200px; height: 130px; width: 30px;"></app-box>-->
+<!--      <app-box class="piece" style="left: 100px; height: 130px; width: 60px;"></app-box>-->
+
+      <div class="kitchen">
+        <app-box class="piece high30" style="left: var(--width30);" [style.background]="cBody"></app-box>
+        <app-box class="piece low60" style="left: calc(2 * var(--width30));" [style.background]="cBody"></app-box>
+        <app-box class="piece low40" style="left: calc(2 * var(--width30) + 1 * var(--width60));" [style.background]="cBody"></app-box>
+        <app-box class="piece low40" style="left: calc(2 * var(--width30) + 1 * var(--width60) + 1 * var(--width40));" [style.background]="cBody"></app-box>
+        <app-box class="piece low60" style="left: calc(2 * var(--width30) + 1 * var(--width60) + 2 * var(--width40));" [style.background]="cBody"></app-box>
+        <app-box class="piece high60" style="left: calc(2 * var(--width30) + 2 * var(--width60) + 2 * var(--width40));" [style.background]="cBody"></app-box>
+        <app-box class="piece high60" style="left: calc(2 * var(--width30) + 3 * var(--width60) + 2 * var(--width40));" [style.background]="cBody"></app-box>
+
+        <app-box class="piece top60" style="left: calc(2 * var(--width30) + 0 * var(--width60));" [style.background]="cBody"></app-box>
+        <app-box class="piece topLow40" style="left: calc(2 * var(--width30) + 1 * var(--width60));" [style.background]="cBody"></app-box>
+        <app-box class="piece topLow40" style="left: calc(2 * var(--width30) + 1 * var(--width60) + 1 * var(--width40));" [style.background]="cBody"></app-box>
+        <app-box class="piece top60" style="left: calc(2 * var(--width30) + 1 * var(--width60) + 2 * var(--width40));" [style.background]="cBody"></app-box>
+
+        <app-box class="piece workingPlate" [style.background]="cWorkingPlate"></app-box>
+        <app-box class="piece plateSave" [style.background]="cWallSave"></app-box>
+
+
+        <app-box class="piece island" [style.background]="cBody"></app-box>
+        <app-box class="piece island workingPlate" [style.background]="cWorkingPlate"></app-box>
+
+      </div>
+
+
+<!--      <div class="face wall left">-->
+
+<!--      </div>-->
+
+
+<!--      <div class="face wall right">-->
+
+<!--      </div>-->
+    </div>
+  </div>
+
+<!--  <div class="perspective">-->
+<!--    <div class="box tut">-->
+<!--      <div class="face top"></div>-->
+<!--      <div class="face bottom"></div>-->
+<!--      <div class="face back"></div>-->
+<!--      <div class="face front"></div>-->
+<!--      <div class="face left"></div>-->
+<!--      <div class="face right"></div>-->
+<!--    </div>-->
+<!--  </div>-->
+
+</div>
+

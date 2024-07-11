@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+
+html {
+  --depth: 40px;
+}
+
+body {
+  background-color: #DDD;
+  font-family: Arial, serif;
+
+}
+
+.scene { // from right
+  perspective: 1000px;
+  perspective-origin: 100% -60%;
+}
+
+.scene { // from right
+  //perspective: 600px;
+  //perspective-origin: -150% -50%;
+}
+
+.wall.left {
+  //display: none;
+}
+
+.wall.right {
+  display: none;
+
+}
